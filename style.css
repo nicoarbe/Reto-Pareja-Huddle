@@ -166,8 +166,13 @@ footer{
 .icons{
     border-color: white;
     border-radius: 100%;
-    margin: 10px;
-    color: white;
+    border-style: solid;
+    width: 35px;
+    height: 35px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
 }
 
 .iconSpace{
