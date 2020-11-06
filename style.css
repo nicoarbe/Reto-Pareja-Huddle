@@ -1,4 +1,5 @@
 body{
+    max-width: 100%;
     font-size: 18px;
     font-family: url(https://fonts.google.com/specimen/Open+Sans);
     
@@ -36,7 +37,6 @@ header{
 
 #description{
     margin: 80px 60px 80px 50px;
-    
 }
 
 #getstarted1{
@@ -56,7 +56,7 @@ header{
 
 
 #imgHeader{
-    width: 40rem;
+    max-width: 100%;
 }
 /* hasta aquí va el header */
 
@@ -80,7 +80,7 @@ header{
 }
 
 #img{
-    width: 22rem;
+    max-width: 100%;
     padding: 35px 40px;
 }
 
@@ -130,9 +130,31 @@ footer{
     padding-bottom: 5px;
 }
 
+.dirFooter{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: 48px;
+}
+
+.dirFooter1{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.dirFooter2{
+    max-width: 20%;
+}
+
+.dirFooter3{
+    max-width: 20%;
+}
+
 .imgFooter{
     margin-top: 150px;
-    margin-left: 48px;
+    margin-left: 90px;
+    margin-bottom: 20px;
 
 }
 
@@ -143,18 +165,130 @@ footer{
     color: white;
 }
 
+.iconSpace{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 .copyright{
     text-align: right;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 
 /* hasta aquí va el footer */
 
-@media (max-width:376px) {
-    #grow {
-       display: block;
+@media (max-width:1075px) {
+
+    
+    #description{
+        max-width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+     .display{
+         display: flex;
+         flex-direction: column;
+     }
+  
+}
+
+@media (max-width:375px) {
+
+    header{
+        margin-bottom: 0px;
+    }
+
+    .display{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .descrip h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .introduction{
+        padding: 0px;
+    }
+
+    #getstarted1{
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .containerCard{
+        max-width: 90%;
+    }
+
+    #card{
+        max-width: 90%;
+    }
+
+    .card1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .callaction{
+        max-width: 90%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #getstarted2{
+        max-width: 90%;
+    }
+
+    .imgFooter{
+        margin-top: 150px;
+        margin-left: 15px;
+
+    }
+
+    .dirFooter{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-top: 0px;
+    }
+
+    .dirFooter1{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .dirFooter2{
+        max-width: 100%;
+    }
+
+    .dirFooter3{
+        max-width: 100%;
+        margin: 0px;
+        margin-top: 30px;
+        margin-bottom: -15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright{
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 50px;
     }
   
 }
