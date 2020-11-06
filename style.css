@@ -49,6 +49,11 @@ header{
     font-size: 12px;
 }
 
+.displayTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
 .display{
     display: flex;
     justify-content: space-between;
@@ -92,7 +97,7 @@ header{
     border: 2px solid whitesmoke; 
     border-radius: 15px;
     max-width: 50%;
-    margin: 0px 254px -85px 370px;
+    margin: 0px 254px -85px 500px;
     height: auto;
     box-shadow: 0px 0px 15px 0px lightgray;
     padding: 50px;
@@ -179,21 +184,7 @@ footer{
 
 /* hasta aquí va el footer */
 
-@media (max-width:1075px) {
 
-    
-    #description{
-        max-width: 100%;
-        margin: 0px;
-        text-align: center;
-    }
-
-     .display{
-         display: flex;
-         flex-direction: column;
-     }
-  
-}
 
 @media (max-width:375px) {
 
@@ -201,12 +192,42 @@ footer{
         margin-bottom: 0px;
     }
 
+    #imgTitle{
+        width: 126px;
+        height: 21px;
+    }
+    
+    #try{
+        width: 140px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .displayTitle{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .display{
         display: flex;
         justify-content: space-between;
         max-width: 100%;
         margin: 0px;
+        margin-top: 0px;
         padding: 15px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #descrption{
+        margin-top: 0px;
+    }
+
+    .descrip{
+        padding-top: 0px;
     }
 
     .descrip h1{
@@ -223,10 +244,6 @@ footer{
         margin-bottom: 50px;
     }
 
-    .containerCard{
-        max-width: 90%;
-    }
-
     #card{
         max-width: 90%;
     }
@@ -234,11 +251,13 @@ footer{
     .card1{
         display: flex;
         flex-direction: column-reverse;
+        text-align: center;
     }
 
     .card2{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .callaction{
